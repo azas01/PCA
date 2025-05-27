@@ -31,7 +31,6 @@ if uploaded_file is not None:
         st.error("No numeric columns found in the dataset after cleaning.")
         st.stop()
 
-    # Feature and method selection in main page
     st.subheader("Settings")
     select_cols = st.multiselect(
         label="Select numeric features for PCA", 
